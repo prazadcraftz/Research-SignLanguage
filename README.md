@@ -197,8 +197,8 @@ This project was developed as a Bachelor of Engineering Capstone Project in **Co
 - **Kesavarapu Nikhil Nowshan** (UID: `23BAI71439`)
 - **Sanyam Singla** (UID: `23BAI70220`)
 
-**Project Supervisor & Head of Department:**
-- **Dr. Neeru Bala**, Head of Department, Computer Science & Engineering, Chandigarh University.
+**Project Supervisor:**
+- **Dr. Neeru Bala**, Computer Science & Engineering, Chandigarh University.
 
 ---
 
