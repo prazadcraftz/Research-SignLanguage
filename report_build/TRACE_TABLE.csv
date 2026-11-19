@@ -1,0 +1,71 @@
+Claim / Metric Description,Source File / Checkpoint,Line Reference,Exact Numerical Value / Specification
+Total Vocabulary Size,prepare_dataset.py,Line 33,26 classes (A through Z)
+Static Sign Count,realtime_translator.py / motion.py,L31-L34,24 static letters
+Dynamic Sign Count,motion.py,L1-L20,2 dynamic letters (J and Z)
+MediaPipe Hand Detector Complexity,preprocessing.py,Line 50,Complexity = 1
+Landmark Joint Count,preprocessing.py,Line 45,21 3D joints (x y z)
+Aspect-Preserving Bounding Box Fill,preprocessing.py,Line 41,HAND_FILL = 0.70 (70% canvas span)
+Intermediate Drawing Canvas Resolution,preprocessing.py,Line 36,CANVAS_SIZE = 192 (192x192 px)
+Model Input Canvas Resolution,preprocessing.py,Line 43,MODEL_INPUT_SIZE = 96 (96x96x3 RGB)
+Intermediate Downsampling Method,preprocessing.py,Line 151,cv2.INTER_AREA
+Color Ordering of Rendered Skeleton,preprocessing.py,Line 122-128,Pure RGB uint8
+Landmark Augmentation Rotation,preprocessing.py,Line 175,-15.0 to +15.0 degrees
+Landmark Augmentation Isotropic Scale,preprocessing.py,Line 180,0.9 to 1.1 scale factor
+Landmark Augmentation Translation Shift,preprocessing.py,Line 182,-0.05 to +0.05 canvas units
+Landmark Augmentation Gaussian Noise,preprocessing.py,Line 183,sigma = 0.005
+Landmark Augmentation Mirroring Probability,preprocessing.py,Line 169,p = 0.50 (left/right hand invariance)
+1-Euro Filter Minimum Cutoff Frequency,smoothing.py,Line 38,MIN_CUTOFF = 0.8 Hz
+1-Euro Filter Velocity Adaptation Beta,smoothing.py,Line 43,BETA = 0.02 Hz/(px/s)
+1-Euro Filter Derivative Cutoff,smoothing.py,Line 48,D_CUTOFF = 1.0 Hz
+Motion Tracker Sliding Window,motion.py,Line 41,HISTORY_FRAMES = 45 frames (~1.5 s at 30 FPS)
+Motion Tracker Trajectory Smoothing,motion.py,Line 58,SMOOTHING = 5 frames
+Motion Tracker Dynamic Path Length Gate,motion.py,Line 42,MIN_PATH_LENGTH = 0.55 hand-widths
+Motion Tracker Static Commit Velocity Gate,motion.py,Line 51,MOVING_THRESHOLD = 0.035 hand-widths/frame
+Sign J Kinematic Descent Threshold,motion.py,Line 52,J_MIN_DESCENT = 0.20 hand-widths
+Sign J Kinematic Hook Threshold,motion.py,Line 53,J_MIN_HOOK = 0.12 hand-widths
+Sign Z Direction Reversals Count,motion.py,Line 54,Z_MIN_REVERSALS = 2 direction sign changes
+Sign Z Horizontal Displacement Threshold,motion.py,Line 55,Z_MIN_HORIZONTAL = 0.30 hand-widths
+Total Trainable Parameters,asl_cnn_model.onnx,Tensor Metadata,308602 parameters
+ONNX Checkpoint File Size,asl_cnn_model.onnx,Filesystem Size,1.18 MB (1235355 bytes)
+Optimizer and Learning Rate,train_model.py,Line 247,Adam (eta = 0.001)
+Loss Function,train_model.py,Line 248,Sparse Categorical Cross-Entropy (from_logits=True)
+Training Batch Size,train_model.py,Line 208,128 samples
+Training Maximum Epochs,train_model.py,Line 209,40 epochs (early stopped at 20 restored 12)
+Batch Normalization Momentum,train_model.py,Line 142,BN_MOMENTUM = 0.90
+Primary Dataset Raw Image Count (grassknoted),prepare_dataset.py / HANDOFF.md,Line 105,78000 images
+Primary Dataset MediaPipe Detections,prepare_dataset.py / HANDOFF.md,Line 105,64765 images (83.0% yield)
+Secondary Dataset Raw Image Count (ayuraj),prepare_dataset.py / HANDOFF.md,Line 106,1815 images
+Secondary Dataset MediaPipe Detections,prepare_dataset.py / HANDOFF.md,Line 106,1742 images (96.0% yield)
+Test Dataset Raw Image Count (danrasband),prepare_dataset.py / HANDOFF.md,Line 107,780 images
+Test Dataset MediaPipe Detections,prepare_dataset.py / HANDOFF.md,Line 107,765 images (98.1% yield)
+Total Extracted Landmarks Archive Size,landmarks.npz,Filesystem Size,20 MB (67272 total hand samples)
+Contiguous Validation Accuracy,HANDOFF.md / training_history.json,Line 23,96.80%
+Held-Out Unseen Signer Accuracy (danrasband),HANDOFF.md / evaluate.py,Line 24,93.70%
+Keras to ONNX Maximum Absolute Parity Error,HANDOFF.md / export_onnx.py,Line 26,1.14e-05
+Commit Gate Precision (Single Split),HANDOFF.md,Line 170,96.70%
+Commit Gate Coverage (Single Split),HANDOFF.md,Line 170,94.60%
+Perturbation Jitter Stability (Correct Signs),HANDOFF.md,Line 180,99.00%
+Perturbation Jitter Stability (Wrong/Ambiguous Signs),HANDOFF.md,Line 181,85.70%
+Multi-Seed Macro Top-1 Accuracy (Proposed CNN),aggregated_main_and_baselines.json,Line 6,86.90% +- 0.59%
+Multi-Seed Macro F1-Score (Proposed CNN),aggregated_main_and_baselines.json,Line 9,84.15% +- 0.68%
+Multi-Seed Coordinate MLP Baseline Accuracy,aggregated_main_and_baselines.json,Line 18,63.89% +- 5.86%
+Multi-Seed Coordinate Random Forest Accuracy,aggregated_main_and_baselines.json,Line 30,99.67% +- 0.16%
+Multi-Seed Coordinate SVM Baseline Accuracy,aggregated_main_and_baselines.json,Line 42,100.00% +- 0.00%
+Statistical Significance vs Coordinate MLP,statistical_tests.json,Line 6-11,t = 8.218 p = 1.195e-03 Cohen's d = 3.68 (p < 0.05)
+Domain Shift Canonical Shared Renderer,aggregated_domain_shift.json,Line 6,86.77% +- 0.39%
+Domain Shift Framing Mismatch Degradation,aggregated_domain_shift.json,Line 18,71.95% +- 0.64% (-14.82%)
+Domain Shift Color Inversion (BGR) Degradation,aggregated_domain_shift.json,Line 42,59.25% +- 0.46% (-27.52%)
+Domain Shift Cumulative Compound Collapse,aggregated_domain_shift.json,Line 54,35.11% +- 0.51% (-51.66%)
+Landmark Denoising Still Shimmer (1-Euro Filter),aggregated_smoothing.json,tab3_smoothing_benchmark.csv,0.70 +- 0.04 px RMS
+Landmark Denoising Still Shimmer (Raw Input),aggregated_smoothing.json,tab3_smoothing_benchmark.csv,1.99 +- 0.07 px RMS
+Landmark Denoising Still Shimmer (Fixed EMA 0.50),aggregated_smoothing.json,tab3_smoothing_benchmark.csv,1.20 +- 0.07 px RMS
+Landmark Denoising Tracking Lag at 2000 px/s (1-Euro),aggregated_smoothing.json,tab3_smoothing_benchmark.csv,3.6 +- 0.1 ms
+Landmark Denoising Tracking Lag at 2000 px/s (EMA 0.20),aggregated_smoothing.json,tab3_smoothing_benchmark.csv,131.8 +- 0.1 ms
+MediaPipe Hand Detection Latency (CPU),efficiency_profiling.json,Line 46,19.43 +- 8.08 ms
+1-Euro Adaptive Filter Execution Latency (CPU),efficiency_profiling.json,Line 10,0.22 +- 0.52 ms
+Bounding Box Normalization Latency (CPU),efficiency_profiling.json,Line 16,0.14 +- 0.72 ms
+Deterministic Skeleton Rendering Latency (CPU),efficiency_profiling.json,Line 22,0.89 +- 1.82 ms
+ONNX Runtime CPU Inference Latency (Mean),efficiency_profiling.json,Line 28,11.61 +- 19.37 ms
+ONNX Runtime CPU Inference Latency (Median p50),efficiency_profiling.json,Line 30,3.78 ms
+OpenCV Single-Window UI Compositing Latency,efficiency_profiling.json,Line 40,18.10 +- 20.92 ms
+Total End-to-End Pipeline Execution Time,efficiency_profiling.json,Line 52,51.14 ms (~19.6 FPS)

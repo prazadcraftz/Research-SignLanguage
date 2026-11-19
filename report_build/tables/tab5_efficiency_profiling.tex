@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\caption{Computational Efficiency and Execution Time Breakdown on Commodity x86\_64 CPU Across 1,000 Iterations.}
+\label{tab:efficiency}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Processing Stage} & \textbf{Mean Latency (ms)} & \textbf{Std (ms)} \\
+\midrule
+MediaPipe Hands (Detector Complexity 1) & 19.43 & 8.08 \\
+1-Euro Adaptive Filter (21 Joints) & 0.22 & 0.52 \\
+Bounding Box Normalization (Aspect-Preserving) & 0.14 & 0.72 \\
+Deterministic Skeleton Rendering (render_skeleton) & 0.89 & 1.82 \\
+ONNX Runtime CNN Forward Pass (CPU, Batch=1) & 11.61 & 19.37 \\
+Temporal Smoothing & Commit Gating & 0.75 & 1.24 \\
+Single-Window UI Compositing (OpenCV) & 18.10 & 20.92 \\
+\midrule
+\textbf{TOTAL END-TO-END PIPELINE} & \textbf{51.14} & - \\
+\textbf{Effective Frame Rate (Throughput)} & \multicolumn{2}{c}{\textbf{19.6 FPS}} \\
+\bottomrule
+\end{tabular}
+\end{table}

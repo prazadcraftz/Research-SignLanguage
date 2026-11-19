@@ -1,0 +1,9 @@
+# Environment requirements for evaluating paper artifacts, generating graphs, and running baselines
+numpy==1.26.4
+scipy==1.17.1
+matplotlib==3.11.2
+opencv-python==4.11.0.86
+onnxruntime==1.31.1
+mediapipe==0.10.21
+scikit-learn==1.9.1
+protobuf==4.25.9

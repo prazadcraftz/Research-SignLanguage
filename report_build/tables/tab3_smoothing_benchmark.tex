@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{Landmark Denoising Filter Comparison: Idle Shimmer Reduction vs. Motion Latency (Mean $\pm$ Std Across 5 Seeds).}
+\label{tab:smoothing}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Denoising Filter} & \textbf{Still Shimmer (px)} & \textbf{Lag @ 300 px/s (ms)} & \textbf{Lag @ 2000 px/s (ms)} \\
+\midrule
+Raw (No Denoising) & 1.99 ± 0.07 & 4.0 ± 0.4 & 0.6 ± 0.1 \\
+Fixed EMA ($\alpha = 0.50$) & 1.20 ± 0.07 & 34.0 ± 0.5 & 33.4 ± 0.1 \\
+Fixed EMA ($\alpha = 0.35$) & 0.89 ± 0.06 & 62.4 ± 0.9 & 61.9 ± 0.1 \\
+Fixed EMA ($\alpha = 0.20$) & 0.62 ± 0.03 & 132.6 ± 1.0 & 131.8 ± 0.1 \\
+\textbf{1-Euro Adaptive Filter (Proposed)} & \textbf{0.70 ± 0.04} & \textbf{16.3 ± 0.2} & \textbf{3.6 ± 0.1} \\
+\bottomrule
+\end{tabular}
+\end{table}

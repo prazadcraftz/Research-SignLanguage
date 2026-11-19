@@ -1,0 +1,70 @@
+# ==============================================================================
+# Edge-ASL: Root .gitignore
+# ==============================================================================
+
+# Virtual Environments (DO NOT COMMIT)
+.venv/
+venv/
+venv*/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Python Bytecode and Compilation Artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+
+# Training Datasets, Large Landmark Caches & Model Checkpoints
+archive/
+datasets/
+train_db_cache/
+val_db_cache/
+landmarks.npz
+split.npz
+training_history.json
+*.keras
+*.h5
+grafica_entrenamiento.png
+!canonical_templates.npz
+
+# Local Presentation & Scratch Generation Scripts
+generar_arquitectura.py
+generar_infografia.py
+arquitectura_3d.png
+infografia_educativa.png
+
+# Microsoft Office Lock Files
+~$*.docx
+~$*.pptx
+~$*.xlsx
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# IDE and Editor Directories
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~

@@ -1,0 +1,35 @@
+{
+  "Proposed_vs_Coordinate_MLP": {
+    "proposed_mean": 0.8690109890109892,
+    "baseline_mean": 0.6389010989010989,
+    "mean_difference": 0.23010989010989025,
+    "t_statistic": 8.218023023329682,
+    "p_value_paired_t": 0.0011950411562324855,
+    "wilcoxon_stat": 0.0,
+    "p_value_wilcoxon": 0.0625,
+    "cohens_d": 3.6752110371765316,
+    "statistically_significant_p05": true
+  },
+  "Proposed_vs_Coordinate_Random_Forest": {
+    "proposed_mean": 0.8690109890109892,
+    "baseline_mean": 0.9967032967032967,
+    "mean_difference": -0.12769230769230755,
+    "t_statistic": -39.532042793250874,
+    "p_value_paired_t": 2.4462668863337417e-06,
+    "wilcoxon_stat": 0.0,
+    "p_value_wilcoxon": 0.0625,
+    "cohens_d": -17.679242517747,
+    "statistically_significant_p05": true
+  },
+  "Proposed_vs_Coordinate_SVM": {
+    "proposed_mean": 0.8690109890109892,
+    "baseline_mean": 1.0,
+    "mean_difference": -0.13098901098901083,
+    "t_statistic": -49.3253109607013,
+    "p_value_paired_t": 1.0108409840247682e-06,
+    "wilcoxon_stat": 0.0,
+    "p_value_wilcoxon": 0.0625,
+    "cohens_d": -22.058912516006068,
+    "statistically_significant_p05": true
+  }
+}

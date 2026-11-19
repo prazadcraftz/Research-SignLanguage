@@ -1,0 +1,107 @@
+{
+  "experiment": "EXP-CONFIDENCE-GATING",
+  "threshold_sweep_aggregated": [
+    {
+      "threshold": 0.4,
+      "coverage_mean": 0.9848717948717949,
+      "coverage_std": 0.0037815080009622587,
+      "precision_mean": 0.878678991464526,
+      "precision_std": 0.0058013394220659455,
+      "wrong_commits_mean": 93.2
+    },
+    {
+      "threshold": 0.45,
+      "coverage_mean": 0.9774358974358975,
+      "coverage_std": 0.005985957707655788,
+      "precision_mean": 0.8848381673462077,
+      "precision_std": 0.00432348012495079,
+      "wrong_commits_mean": 87.8
+    },
+    {
+      "threshold": 0.5,
+      "coverage_mean": 0.9694871794871794,
+      "coverage_std": 0.0062413648434041236,
+      "precision_mean": 0.8912980541284254,
+      "precision_std": 0.0029459311840831287,
+      "wrong_commits_mean": 82.2
+    },
+    {
+      "threshold": 0.55,
+      "coverage_mean": 0.9533333333333334,
+      "coverage_std": 0.005484422983642967,
+      "precision_mean": 0.9026396615361729,
+      "precision_std": 0.005315197632751496,
+      "wrong_commits_mean": 72.4
+    },
+    {
+      "threshold": 0.6,
+      "coverage_mean": 0.9400000000000001,
+      "coverage_std": 0.00692782363390064,
+      "precision_mean": 0.911900125848996,
+      "precision_std": 0.0051285112976111515,
+      "wrong_commits_mean": 64.6
+    },
+    {
+      "threshold": 0.65,
+      "coverage_mean": 0.923846153846154,
+      "coverage_std": 0.010280420613707422,
+      "precision_mean": 0.9225986838198003,
+      "precision_std": 0.007284531592770988,
+      "wrong_commits_mean": 55.8
+    },
+    {
+      "threshold": 0.7,
+      "coverage_mean": 0.908974358974359,
+      "coverage_std": 0.011395121047840505,
+      "precision_mean": 0.9337264254108893,
+      "precision_std": 0.005820288858364247,
+      "wrong_commits_mean": 47.0
+    },
+    {
+      "threshold": 0.75,
+      "coverage_mean": 0.8948717948717949,
+      "coverage_std": 0.012884455924513961,
+      "precision_mean": 0.9424398230739859,
+      "precision_std": 0.004968120749353658,
+      "wrong_commits_mean": 40.2
+    },
+    {
+      "threshold": 0.8,
+      "coverage_mean": 0.8794871794871796,
+      "coverage_std": 0.014189707449473492,
+      "precision_mean": 0.9525546703229166,
+      "precision_std": 0.007002589926172021,
+      "wrong_commits_mean": 32.6
+    },
+    {
+      "threshold": 0.85,
+      "coverage_mean": 0.8643589743589744,
+      "coverage_std": 0.013640447259764498,
+      "precision_mean": 0.9626871598722438,
+      "precision_std": 0.005682199455274337,
+      "wrong_commits_mean": 25.2
+    },
+    {
+      "threshold": 0.9,
+      "coverage_mean": 0.8438461538461539,
+      "coverage_std": 0.010431202875286162,
+      "precision_mean": 0.9760255091251144,
+      "precision_std": 0.00454221326735323,
+      "wrong_commits_mean": 15.8
+    },
+    {
+      "threshold": 0.95,
+      "coverage_mean": 0.812051282051282,
+      "coverage_std": 0.008387398581433881,
+      "precision_mean": 0.996192499875886,
+      "precision_std": 0.00269940244658171,
+      "wrong_commits_mean": 2.4
+    }
+  ],
+  "stability": {
+    "agreement_when_correct_mean": 0.9918128767940187,
+    "agreement_when_correct_std": 0.0017766046001378732,
+    "agreement_when_wrong_mean": 0.8781249184207702,
+    "agreement_when_wrong_std": 0.025103737070825548
+  }
+}

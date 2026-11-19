@@ -1,0 +1,16 @@
+{
+  "experiment_id": "EXP-EFFICIENCY-PROFILING",
+  "description": "Stage-wise CPU execution time, parameter counts, and throughput benchmarking",
+  "warmup_iterations": 50,
+  "benchmark_iterations": 1000,
+  "stages": [
+    "mediapipe_detection",
+    "one_euro_filter",
+    "coordinate_normalization",
+    "skeleton_rendering",
+    "onnx_inference_cpu",
+    "temporal_smoothing_and_gating",
+    "ui_compositing"
+  ],
+  "model_path": "MediaPipe-ASL-sign-language-recognition/asl_cnn_model.onnx"
+}

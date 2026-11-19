@@ -1,0 +1,37 @@
+{
+  "experiment": "ABLATION-RENDERING",
+  "seed": 1024,
+  "timestamp": "2026-11-12T06:59:27Z",
+  "variants": {
+    "Default (96x96, Color, Standard Stroke)": {
+      "accuracy": 0.8692307692307693,
+      "correct": 791,
+      "total": 910
+    },
+    "Resolution: 48x48 (Upscaled to 96x96)": {
+      "accuracy": 0.15164835164835164,
+      "correct": 138,
+      "total": 910
+    },
+    "Resolution: 192x192 (Downsampled to 96x96)": {
+      "accuracy": 0.8692307692307693,
+      "correct": 791,
+      "total": 910
+    },
+    "Monochrome Grayscale Skeleton": {
+      "accuracy": 0.12087912087912088,
+      "correct": 110,
+      "total": 910
+    },
+    "Thin Stroke Weight": {
+      "accuracy": 0.5362637362637362,
+      "correct": 488,
+      "total": 910
+    },
+    "Thick Stroke Weight": {
+      "accuracy": 0.856043956043956,
+      "correct": 779,
+      "total": 910
+    }
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "experiment": "EXP-CONFIDENCE-GATING",
+  "seed": 789,
+  "timestamp": "2026-11-12T06:51:05Z",
+  "baseline_accuracy": 0.8641025641025641,
+  "threshold_sweep": [
+    {
+      "threshold": 0.4,
+      "coverage": 0.9871794871794872,
+      "precision": 0.874025974025974,
+      "wrong_commits": 97,
+      "total_committed": 770
+    },
+    {
+      "threshold": 0.45,
+      "coverage": 0.9782051282051282,
+      "precision": 0.8820445609436435,
+      "wrong_commits": 90,
+      "total_committed": 763
+    },
+    {
+      "threshold": 0.5,
+      "coverage": 0.9666666666666667,
+      "precision": 0.8912466843501327,
+      "wrong_commits": 82,
+      "total_committed": 754
+    },
+    {
+      "threshold": 0.55,
+      "coverage": 0.9564102564102565,
+      "precision": 0.8967828418230563,
+      "wrong_commits": 77,
+      "total_committed": 746
+    },
+    {
+      "threshold": 0.6,
+      "coverage": 0.9448717948717948,
+      "precision": 0.9050203527815468,
+      "wrong_commits": 70,
+      "total_committed": 737
+    },
+    {
+      "threshold": 0.65,
+      "coverage": 0.9282051282051282,
+      "precision": 0.9171270718232044,
+      "wrong_commits": 60,
+      "total_committed": 724
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.9179487179487179,
+      "precision": 0.9245810055865922,
+      "wrong_commits": 54,
+      "total_committed": 716
+    },
+    {
+      "threshold": 0.75,
+      "coverage": 0.9012820512820513,
+      "precision": 0.9359886201991465,
+      "wrong_commits": 45,
+      "total_committed": 703
+    },
+    {
+      "threshold": 0.8,
+      "coverage": 0.8884615384615384,
+      "precision": 0.9466089466089466,
+      "wrong_commits": 37,
+      "total_committed": 693
+    },
+    {
+      "threshold": 0.85,
+      "coverage": 0.8692307692307693,
+      "precision": 0.9572271386430679,
+      "wrong_commits": 29,
+      "total_committed": 678
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.8448717948717949,
+      "precision": 0.9742033383915023,
+      "wrong_commits": 17,
+      "total_committed": 659
+    },
+    {
+      "threshold": 0.95,
+      "coverage": 0.8128205128205128,
+      "precision": 0.998422712933754,
+      "wrong_commits": 1,
+      "total_committed": 634
+    }
+  ],
+  "commit_frame_sweep": [
+    {
+      "commit_frames": 3,
+      "p_commit_correct": 0.9757185128706314,
+      "p_commit_wrong": 0.6863051168078346,
+      "effective_latency_ms": 100.0
+    },
+    {
+      "commit_frames": 5,
+      "p_commit_correct": 0.9598592960742157,
+      "p_commit_wrong": 0.5339845948214037,
+      "effective_latency_ms": 166.66666666666669
+    },
+    {
+      "commit_frames": 8,
+      "p_commit_correct": 0.9365524849305847,
+      "p_commit_wrong": 0.36647635972248765,
+      "effective_latency_ms": 266.6666666666667
+    },
+    {
+      "commit_frames": 10,
+      "p_commit_correct": 0.9213298682600888,
+      "p_commit_wrong": 0.28513954750657866,
+      "effective_latency_ms": 333.33333333333337
+    },
+    {
+      "commit_frames": 12,
+      "p_commit_correct": 0.9063546782549697,
+      "p_commit_wrong": 0.22185486019841463,
+      "effective_latency_ms": 400.0
+    },
+    {
+      "commit_frames": 15,
+      "p_commit_correct": 0.8843470388002787,
+      "p_commit_wrong": 0.15226012574285877,
+      "effective_latency_ms": 500.00000000000006
+    },
+    {
+      "commit_frames": 18,
+      "p_commit_correct": 0.8628737775597545,
+      "p_commit_wrong": 0.10449690338312827,
+      "effective_latency_ms": 600.0
+    },
+    {
+      "commit_frames": 20,
+      "p_commit_correct": 0.8488487261481525,
+      "p_commit_wrong": 0.08130456155225642,
+      "effective_latency_ms": 666.6666666666667
+    }
+  ],
+  "stability": {
+    "rock_solid_hands_pct": 0.9282051282051282,
+    "overall_agreement": 0.9769230769230769,
+    "agreement_when_baseline_correct": 0.9918397626112759,
+    "agreement_when_baseline_wrong": 0.8820754716981132
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "experiment_id": "EXP-MOTION-KINEMATICS",
+  "description": "Evaluation of dynamic trajectory detection for ASL letters J and Z",
+  "history_frames": 45,
+  "smoothing_kernel": 5,
+  "moving_threshold": 0.035,
+  "min_path_length": 0.55,
+  "j_min_descent": 0.20,
+  "j_min_hook": 0.12,
+  "z_min_reversals": 2,
+  "z_min_horizontal": 0.30,
+  "scenarios": [
+    "still_hand_light_jitter",
+    "still_hand_heavy_jitter",
+    "slow_j_gesture",
+    "normal_j_gesture",
+    "fast_j_gesture",
+    "slow_z_gesture",
+    "normal_z_gesture",
+    "fast_z_gesture"
+  ],
+  "trials_per_scenario": 100,
+  "seeds": [42, 123, 456, 789, 1024]
+}

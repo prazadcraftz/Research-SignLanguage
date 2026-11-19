@@ -1,0 +1,39 @@
+{
+  "experiment_id": "EXP-DOMAIN-SHIFT",
+  "description": "Evaluation of accuracy degradation under the Bug Chain domain shift failure modes",
+  "modes": [
+    {
+      "name": "Canonical (RGB, 70% fill, centered)",
+      "rgb": true,
+      "canonical_framing": true,
+      "isotropic_aspect": true
+    },
+    {
+      "name": "Camera Framing Mismatch (29%-76% random fill)",
+      "rgb": true,
+      "canonical_framing": false,
+      "isotropic_aspect": true
+    },
+    {
+      "name": "Aspect Ratio Distortion (4:3 camera stretch)",
+      "rgb": true,
+      "canonical_framing": true,
+      "isotropic_aspect": false
+    },
+    {
+      "name": "Color Inversion (OpenCV BGR fed to RGB model)",
+      "rgb": false,
+      "canonical_framing": true,
+      "isotropic_aspect": true
+    },
+    {
+      "name": "Combined Cumulative Domain Shift",
+      "rgb": false,
+      "canonical_framing": false,
+      "isotropic_aspect": false
+    }
+  ],
+  "seeds": [42, 123, 456, 789, 1024],
+  "samples_per_class": 50,
+  "model_path": "MediaPipe-ASL-sign-language-recognition/asl_cnn_model.onnx"
+}

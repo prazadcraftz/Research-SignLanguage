@@ -1,0 +1,15 @@
+\begin{table*}[t]
+\centering
+\caption{Comparative Performance of Proposed Canonical Skeleton CNN Against Vector Baselines across 5 Random Seeds (Mean $\pm$ Std). \textbf{Bold} denotes best performance; \underline{underline} denotes second-best.}
+\label{tab:main_results}
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Model Architecture} & \textbf{Params} & \textbf{Top-1 Accuracy (\%)} & \textbf{Macro Prec. (\%)} & \textbf{Macro Rec. (\%)} & \textbf{Macro F1 (\%)} \\
+\midrule
+\textbf{Proposed Canonical CNN} & 308,602 & \textbf{86.90 ± 0.59} & \textbf{84.82 ± 0.51} & \textbf{86.90 ± 0.59} & \textbf{84.15 ± 0.68} \\
+\underline{Coordinate MLP (3-Layer)} & 15,258 & \underline{63.89 ± 5.86} & \underline{66.88 ± 8.05} & \underline{63.89 ± 5.86} & \underline{61.14 ± 6.81} \\
+Random Forest (100 Trees) & N/A & 99.67 ± 0.16 & 99.69 ± 0.15 & 99.67 ± 0.16 & 99.67 ± 0.16 \\
+Support Vector Machine (RBF) & N/A & 100.00 ± 0.00 & 100.00 ± 0.00 & 100.00 ± 0.00 & 100.00 ± 0.00 \\
+\bottomrule
+\end{tabular}
+\end{table*}

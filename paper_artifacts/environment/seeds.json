@@ -1,0 +1,5 @@
+{
+  "description": "Fixed random seeds for statistical evaluation across 5 independent experimental runs",
+  "seeds": [42, 123, 456, 789, 1024],
+  "confidence_level": 0.95
+}

@@ -1,0 +1,34 @@
+{
+  "experiment": "EXP-DOMAIN-SHIFT",
+  "seed": 456,
+  "timestamp": "2026-11-12T06:41:59Z",
+  "total_samples": 1300,
+  "num_classes": 26,
+  "conditions": {
+    "1. Canonical Shared Renderer": {
+      "accuracy": 0.8661538461538462,
+      "correct": 1126,
+      "total": 1300
+    },
+    "2. Framing Mismatch (29%-76% fill)": {
+      "accuracy": 0.7146153846153847,
+      "correct": 929,
+      "total": 1300
+    },
+    "3. Aspect Squashed (4:3 camera stretch)": {
+      "accuracy": 0.8676923076923077,
+      "correct": 1128,
+      "total": 1300
+    },
+    "4. Channel Inverted (BGR vs RGB)": {
+      "accuracy": 0.5961538461538461,
+      "correct": 775,
+      "total": 1300
+    },
+    "5. Cumulative Combined Shift": {
+      "accuracy": 0.3484615384615385,
+      "correct": 453,
+      "total": 1300
+    }
+  }
+}

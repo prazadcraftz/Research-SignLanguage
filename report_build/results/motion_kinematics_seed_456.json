@@ -1,0 +1,103 @@
+{
+  "experiment": "EXP-MOTION-KINEMATICS",
+  "seed": 456,
+  "timestamp": "2026-11-12T06:45:53Z",
+  "thresholds": {
+    "MOVING_THRESHOLD": 0.035,
+    "MIN_PATH_LENGTH": 0.55,
+    "J_MIN_DESCENT": 0.2,
+    "J_MIN_HOOK": 0.12,
+    "Z_MIN_REVERSALS": 2,
+    "Z_MIN_HORIZONTAL": 0.3
+  },
+  "scenarios": {
+    "still_hand_light_jitter": {
+      "median_speed": 0.08715356141328812,
+      "mean_speed": 0.09372366908937693,
+      "std_speed": 0.03403840738617631,
+      "median_path": 0.7856522810761338,
+      "mean_path": 0.7932676644325309,
+      "std_path": 0.0931526067473869,
+      "pct_classified_as_j": 0.0,
+      "pct_classified_as_z": 0.0,
+      "pct_flagged_moving": 0.98
+    },
+    "still_hand_heavy_jitter": {
+      "median_speed": 0.1444089561700821,
+      "mean_speed": 0.16786439776420592,
+      "std_speed": 0.07990842431531966,
+      "median_path": 1.6873480331255521,
+      "mean_path": 1.7087996340016987,
+      "std_path": 0.21154620118300346,
+      "pct_classified_as_j": 0.04,
+      "pct_classified_as_z": 0.0,
+      "pct_flagged_moving": 1.0
+    },
+    "slow_j_gesture": {
+      "median_speed": 0.09906241297721863,
+      "mean_speed": 0.09966871820390225,
+      "std_speed": 0.04629684767715811,
+      "median_path": 0.9112963972242498,
+      "mean_path": 0.9189105854291684,
+      "std_path": 0.07582436148172045,
+      "pct_classified_as_j": 0.46,
+      "pct_classified_as_z": 0.0,
+      "pct_flagged_moving": 0.9
+    },
+    "normal_j_gesture": {
+      "median_speed": 0.09089130535721779,
+      "mean_speed": 0.10327384263277053,
+      "std_speed": 0.05158334864620695,
+      "median_path": 1.2378322317452557,
+      "mean_path": 1.2506453928592587,
+      "std_path": 0.10009628059129312,
+      "pct_classified_as_j": 0.66,
+      "pct_classified_as_z": 0.0,
+      "pct_flagged_moving": 0.98
+    },
+    "fast_j_gesture": {
+      "median_speed": 0.08948987349867821,
+      "mean_speed": 0.08972997955977917,
+      "std_speed": 0.03939107111858832,
+      "median_path": 1.8492648529819067,
+      "mean_path": 1.8528241619202837,
+      "std_path": 0.08298307228735496,
+      "pct_classified_as_j": 0.82,
+      "pct_classified_as_z": 0.0,
+      "pct_flagged_moving": 0.92
+    },
+    "slow_z_gesture": {
+      "median_speed": 0.07900939136743546,
+      "mean_speed": 0.08053075715899467,
+      "std_speed": 0.03692987397645838,
+      "median_path": 1.086698323629711,
+      "mean_path": 1.0902468248179025,
+      "std_path": 0.08426644770799947,
+      "pct_classified_as_j": 0.0,
+      "pct_classified_as_z": 0.14,
+      "pct_flagged_moving": 0.9
+    },
+    "normal_z_gesture": {
+      "median_speed": 0.09088608250021935,
+      "mean_speed": 0.09203844550997019,
+      "std_speed": 0.04989743288782805,
+      "median_path": 1.7070624807370525,
+      "mean_path": 1.7132840946054575,
+      "std_path": 0.07013655196070065,
+      "pct_classified_as_j": 0.0,
+      "pct_classified_as_z": 1.0,
+      "pct_flagged_moving": 0.86
+    },
+    "fast_z_gesture": {
+      "median_speed": 0.26259350776672363,
+      "mean_speed": 0.2626766857504845,
+      "std_speed": 0.030385825137272185,
+      "median_path": 3.5060033819492338,
+      "mean_path": 3.511111650362385,
+      "std_path": 0.12374330513051754,
+      "pct_classified_as_j": 0.0,
+      "pct_classified_as_z": 0.46,
+      "pct_flagged_moving": 1.0
+    }
+  }
+}
